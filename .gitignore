@@ -1,0 +1,9 @@
+*.aux
+*.dvi
+*.log
+*.out
+*.ps
+*.toc
+*.xdv
+*.bak
+tmp/
