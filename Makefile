@@ -20,7 +20,7 @@ GRAPHICS_PATH = graphics
 # You may set extra directories, where latex will search .tex, .cls, graphics and others.
 # Separator in TEXINPUTS is : (TEXINPUTS _must_ end with :).
 # Example:
-TEXINPUTS = $(GRAPHICS_PATH):
+TEXINPUTS = $(GRAPHICS_PATH):fontawesome:moderncv:
 
 
 # DO NOT edit anything below if you unsure
@@ -66,10 +66,10 @@ graphics : $(EPS_GRAPHICS)
 
 
 clean :
-	rm -r $(AUX_DIR) $(GRAPHICS_PATH)/*.eps
+	rm -rf $(AUX_DIR) $(GRAPHICS_PATH)/*.eps
 
-cleanall :
-	rm -r $(AUX_DIR) *.tar.gz $(GRAPHICS_PATH)/*.eps
+cleanall : clean
+	rm -rf *.tar.gz
 
 # create archive with complete file set 
 # (tex, styles, bibliography and final documents)

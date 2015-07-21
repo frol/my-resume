@@ -47,9 +47,9 @@
 \firstname{\textsc{Vladyslav}}
 \familyname{\textsc{Frolov}}
 \title{Software Developer}               % optional, remove the line if not wanted
-\address{75, Peremohy ave.}{Kharkiv, Ukraine, 61174}    % optional, remove the line if not wanted
-\mobile{+38~(067)~571~63~98}                     % optional, remove the line if not wanted
-%\phone{+2~(345)~678~901}                      % optional, remove the line if not wanted
+\address{Kharkiv, Ukraine}    % optional, remove the line if not wanted
+\phone{+38~(067)~571~63~98}                     % optional, remove the line if not wanted
+%\mobile{+2~(345)~678~901}                      % optional, remove the line if not wanted
 %\fax{+3~(456)~789~012}                        % optional, remove the line if not wanted
 \email{frolvlad@gmail.com}                          % optional, remove the line if not wanted
 \homepage{prostoksi.com}                    % optional, remove the line if not wanted
@@ -60,6 +60,9 @@
 %\quote{Some quote (optional)}                 % optional, remove the line if not wanted
 
 \moderncvicons{awesome}
+\ifxetexorluatex
+    \renewcommand*{\labelitemi}{\strut\textcolor{color1}{\raisebox{1pt}{\tiny\faCircleO}}}
+\fi
 
 % to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
 %\makeatletter
@@ -110,12 +113,12 @@ Delivery web-service for restaurant chains ``Mafia'' (mafia.ua) and ``Yakitoria'
 \textsc{\color{gray} -- Python, Django, MySQL, HTML/CSS/JS}}
 
 \subsection{EwaDev}
-\cventry{2009-2011}{Software Developer}{Startup}{}{}{%
-Prototyped a lot of different ideas of web-services \\ %
+\cventry{2009-2011}{Software Developer}{Website building company}{}{}{%
+Developed a variety of websites and web-services \\ %
 \textsc{\color{gray} -- Linux, Python, Django, MySQL, HTML/CSS/JS}}
 
 \section{\textsc{Languages}}
-\cvitem{Russian, Ukrainian}{Mother tongue}
+\cvitem{Russian, Ukrainian}{Native}
 \cvitem{English}{Fluent}
 
 \section{\textsc{Computer skills}}
