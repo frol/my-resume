@@ -5,7 +5,6 @@
 % conditions of the LaTeX Project Public License version 1.3c,
 % available at http://www.latex-project.org/lppl/.
 
-
 \documentclass[11pt,a4paper,sans]{moderncv}   % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
 
 % moderncv themes
@@ -48,7 +47,7 @@
 \familyname{\textsc{Frolov}}
 \title{Software Developer}               % optional, remove the line if not wanted
 \address{Kharkiv, Ukraine}    % optional, remove the line if not wanted
-\phone{+38~(067)~571~63~98}                     % optional, remove the line if not wanted
+%\phone{+38~(067)~571~63~98}                     % optional, remove the line if not wanted
 %\mobile{+2~(345)~678~901}                      % optional, remove the line if not wanted
 %\fax{+3~(456)~789~012}                        % optional, remove the line if not wanted
 \email{frolvlad@gmail.com}                          % optional, remove the line if not wanted
@@ -77,43 +76,45 @@
 %----------------------------------------------------------------------------------
 \begin{document}
 \maketitle
-\vspace*{-1em}
+\vspace*{-2em}
 
 \section{\textsc{Education}}
-\cventry{2012--2013}{Master's Degree}{Kharkiv National University of Radio Electronics}{}{\textit{First Class Honours}}{Security of Information and Communication Systems \\ \textsc{``Research of Synthesis Methods of Nonlinear S-boxes for Block Symmetric Ciphers''}}  % arguments 3 to 6 can be left empty
-\cventry{2008--2012}{Bachelor's Degree}{Kharkiv National University of Radio Electronics}{}{\textit{First Class Honours}}{Security of Information and Communication Systems \\ \textsc{``Security Analysis of WEP Protocol in 802.11 WLAN Computer Networks''}}
+\cventry{September\,2012 -- June\,2013}{Master's Degree}{Kharkiv National University of Radio Electronics}{}{\textit{First Class Honours}}{Security of Information and Communication Systems \\ \textsc{``Research of Synthesis Methods of Nonlinear S-boxes for Block Symmetric Ciphers''}}  % arguments 3 to 6 can be left empty
+\cventry{September\,2008 -- June\,2012}{Bachelor's Degree}{Kharkiv National University of Radio Electronics}{}{\textit{First Class Honours}}{Security of Information and Communication Systems \\ \textsc{``Security Analysis of WEP Protocol in 802.11 WLAN Computer Networks''}}
 
 \section{\textsc{Experience}}
-\subsection{Salford Systems}
-\cventry{2012--today}{Software Developer}{Data Mining and Predictive Analytics Software}{}{}{%
-\begin{itemize}%
-    \item Designed and developed a distributed data mining (BigData) library \\
-        \textsc{\color{gray} -- \mbox{Python}, \mbox{Yarn} \mbox{Hadoop}, \mbox{PySpark}, \mbox{Python} C-extensions}
-    \item Designed and developed a data mining SaaS with distributed backend in the cloud \\
-        \textsc{\color{gray} -- \mbox{Python}, \mbox{Django}, \mbox{PostgreSQL}, \mbox{Redis}, \mbox{AWS}, HTML/CSS/JS}
-    \item Developed an automated distributed testing system for the software suite \\
-        \textsc{\color{gray} -- \mbox{Python}, \mbox{Django}, \mbox{Celery}, \mbox{PostgreSQL}, \mbox{Redis}}
-    \item Developed a text mining tool using Natural Language Toolkit \\
-        \textsc{\color{gray} -- \mbox{Python}, \mbox{NLTK}}
-    \item Set up an IT infrastructure automation with CFEngine.
-\end{itemize}}
-
 
 %\subsection{Company}
 %\cventry{year--year}{Job title}{Employer}{City}{}{Description line 1\newline{}Description line 2}
+
+\subsection{Salford Systems}
+\cventry{June\,2012 -- today}{Software Engineer}{Data Mining and Predictive Analytics Software company}{}{}{%
+\begin{itemize}%
+    \item Designed and developed a distributed data mining (BigData) project \\
+        \textsc{\color{gray} -- \mbox{Python}, \mbox{Yarn} \mbox{Hadoop}, \mbox{PySpark}, \mbox{Python C-extensions}, \mbox{PyInvoke}, \mbox{Anaconda}}
+    \item Designed and developed a data mining SaaS with a distributed backend in the cloud \\
+        \textsc{\color{gray} -- \mbox{Python}, \mbox{Django}, \mbox{PostgreSQL}, \mbox{Redis}, \mbox{AWS}, \mbox{HTML/CSS/JS}}
+    \item Developed an automated distributed testing system for Salford Systems' software suite \\
+        \textsc{\color{gray} -- \mbox{Python}, \mbox{Django}, \mbox{Celery}, \mbox{PostgreSQL}, \mbox{Redis}}
+    \item Developed a text mining tool using Natural Language Toolkit \\
+        \textsc{\color{gray} -- \mbox{Python}, \mbox{NLTK}}
+    \item Set up Salford Systems IT infrastructures \\
+        \textsc{\color{gray} -- \mbox{Linux}, \mbox{Docker}, \mbox{Hadoop}, \mbox{FreeIPA}, \mbox{CFEngine}, \mbox{NGINX}, \mbox{Jenkins}, \mbox{Redmine}, \mbox{PyInvoke}}
+\end{itemize}}
+
 \subsection{Escalibro}
-\cventry{2010--today}{Co-creator}{pet project}{}{}{%
-Web-service for writers and readers, that provide simple and convinient book writing and reading. \\ %
-Involved in every bit of the project: servers tuning, UI design, frontend and backend development \\ %
+\cventry{October\,2010 -- today}{Co-creator}{pet project}{}{}{%
+This is a Web-service for writers and readers, that provides simple and convinient book writing and reading. \\ %
+I was involved in the every bit of the project: servers tuning, UI design, frontend and backend development \\ %
 \textsc{\color{gray} -- Linux, IPsec, Python, Django, Celery, MySQL, RabbitMQ, HTML/CSS/JS}}
 
-\subsection{Mafia \& Yakitoria}
-\cventry{2011--2012}{Software Developer}{}{}{}{%
-Delivery web-service for restaurant chains ``Mafia'' (mafia.ua) and ``Yakitoria'' (yaki.kh.ua) \\ %
+\subsection{Fahrenheit 451}
+\cventry{April\,2011 -- May\,2012}{Software Engineer}{Website building company}{}{}{%
+Developed a food delivery web-service for restaurant chains ``Mafia'' (mafia.ua) and ``Yakitoria'' (yaki.kh.ua) \\ %
 \textsc{\color{gray} -- Python, Django, MySQL, HTML/CSS/JS}}
 
 \subsection{EwaDev}
-\cventry{2009-2011}{Software Developer}{Website building company}{}{}{%
+\cventry{October\,2009 -- December\,2011}{Software Engineer}{Website building company}{}{}{%
 Developed a variety of websites and web-services \\ %
 \textsc{\color{gray} -- Linux, Python, Django, MySQL, HTML/CSS/JS}}
 
@@ -122,10 +123,20 @@ Developed a variety of websites and web-services \\ %
 \cvitem{English}{Fluent}
 
 \section{\textsc{Computer skills}}
-\cvitem{Programming Languages}{\small\textsc{Python $\circ$ SQL $\circ$ HTML $\circ$ JavaScript $\circ$ Bash $\circ$ C++ $\circ$ C $\circ$ {\LaTeX} $\circ$ Delphi/Pascal}}
-\cvitem{Frameworks and Tools}{\small\textsc{Django $\circ$ Celery $\circ$ PySpark $\circ$ Apache Spark $\circ$
-Hadoop YARN $\circ$ jQuery $\circ$ AngularJS $\circ$ VIM $\circ$ Git $\circ$ SVN $\circ$ Mercurial $\circ$ NGINX $\circ$ Apache $\circ$ StrongSWAN $\circ$ Qt}}
-\cvitem{Databases}{\small\textsc{MySQL $\circ$ PostgreSQL $\circ$ SQLite $\circ$ MongoDB $\circ$ RabbitMQ $\circ$ Redis $\circ$ Memcache}}
+\cvitem{Programming Languages}{\small\textsc{%
+        Python $\circ$ Bash $\circ$ C++ $\circ$ C $\circ$ JavaScript $\circ$ SQL $\circ$
+        HTML $\circ$ {\LaTeX} $\circ$ Delphi/Pascal
+}}
+\cvitem{Frameworks and Tools}{\small\textsc{%
+        Django $\circ$ Flask $\circ$ Celery $\circ$ PySpark $\circ$ Apache Spark $\circ$
+        Hadoop YARN $\circ$ ReactJS $\circ$ jQuery $\circ$ AngularJS $\circ$ VIM $\circ$
+        Git $\circ$ SVN $\circ$ Mercurial $\circ$ NGINX $\circ$ Apache $\circ$ PyInvoke $\circ$
+        StrongSWAN $\circ$ Jenkins $\circ$ Anaconda $\circ$ Qt
+}}
+\cvitem{Databases}{\small\textsc{%
+        MySQL $\circ$ PostgreSQL $\circ$ SQLite $\circ$ MongoDB $\circ$ RabbitMQ $\circ$
+        Redis $\circ$ Memcache
+}}
 \cvitem[-1.em]{OS}{\small\textsc{GNU/Linux (Debian, Ubuntu, CentOS, ArchLinux) $\circ$ MS Windows}}
 
 %\section{Interests}
