@@ -5,10 +5,10 @@
 % conditions of the LaTeX Project Public License version 1.3c,
 % available at http://www.latex-project.org/lppl/.
 
-\documentclass[11pt,a4paper,sans]{moderncv}   % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+\documentclass[11pt,a4paper,roman]{moderncv}   % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
 
 % moderncv themes
-\moderncvstyle{classic}                        % style options are 'casual' (default) and 'classic' 
+\moderncvstyle{classic}                        % style options are 'casual' (default) and 'classic'
 \moderncvcolor{blue}                          % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
 %\renewcommand{\familydefault}{\sfdefault}    % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
 %\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
@@ -46,7 +46,7 @@
 \firstname{\textsc{Vladyslav}}
 \familyname{\textsc{Frolov}}
 \title{Software Engineer}               % optional, remove the line if not wanted
-\address{Kyiv, Ukraine}    % optional, remove the line if not wanted
+\address{World citizen, originally from Ukraine}    % optional, remove the line if not wanted
 %\phone{+38~(067)~571~63~98}                     % optional, remove the line if not wanted
 %\mobile{+2~(345)~678~901}                      % optional, remove the line if not wanted
 %\fax{+3~(456)~789~012}                        % optional, remove the line if not wanted
@@ -90,140 +90,139 @@
 %----------------------------------------------------------------------------------
 \begin{document}
 \maketitle
-\vspace*{-2em}
+\vspace*{-3em}
 %\setlength{\parskip}{0.7em}
 
 \section{\textsc{Background}}
 
-I learned the foundation of algorithms and data structures at school where I
-competed in a number of programming contests using Pascal. The algorithmic
-foundation helped me to solve complex problems optimally. Later, I taught myself
-C, C++, Python, JS, Rust, and other programming languages and technologies.
-Throughout my career, I have been into desktop, web, kernel, distributed
-systems, and machine learning developments, and I am eager to learn more and I
-love helping others to learn more.
+Throughout my career, I have been into distributed systems, machine learning,
+web, desktop, and kernel developments, and I am eager to learn more and I love
+helping others to learn more.
 
-\vspace*{1em}
+\section{\textsc{Professional Skills}}
+\cvitem{Programming Languages}{\small\textsc{%
+    Rust $\circ$ Python $\circ$ Cython $\circ$
+    TypeScript $\circ$ JavaScript (ES6+) $\circ$ Bash $\circ$ C++ $\circ$ C \ldots
+}}
+\cvitem{Frameworks and Tools}{\small\textsc{%
+    Flask $\circ$ Django $\circ$ ReactJS $\circ$
+    Dask $\circ$ Celery $\circ$ PySpark $\circ$ Apache Spark $\circ$
+    NGINX $\circ$ Docker $\circ$ VIM $\circ$ Git $\circ$ OpenVPN \ldots
+}}
+\cvitem{Data Storages}{\small\textsc{%
+    PostgreSQL $\circ$ MySQL $\circ$ SQLite $\circ$
+    RabbitMQ $\circ$ Redis $\circ$ MongoDB $\circ$ Memcache
+}}
+\cvitem{OS}{\small\textsc{%
+    BTW, I use Arch Linux
+}}
+
+
 \section{\textsc{Education}}
-\cventry{September\,2012 -- June\,2013}{Master's Degree}{Kharkiv National University of Radio Electronics}{}{\textit{First Class Honours}}{Security of Information and Communication Systems \\ \textsc{``Research of Synthesis Methods of Nonlinear S-boxes for Block Symmetric Ciphers''}}  % arguments 3 to 6 can be left empty
-\cventry{September\,2008 -- June\,2012}{Bachelor's Degree}{Kharkiv National University of Radio Electronics}{}{\textit{First Class Honours}}{Security of Information and Communication Systems \\ \textsc{``Security Analysis of WEP Protocol in 802.11 WLAN Computer Networks''}}
+\cventry{2008 -- 2013}{Bachelor's \& Master's Degree}{Kharkiv National University of Radio Electronics}{}{}{%
+    \textit{First Class Honours} \\
+    Security of Information and Communication Systems \\
+    \textsc{``Research of Synthesis Methods of Nonlinear S-boxes for Block Symmetric Ciphers''}}  % arguments 3 to 6 can be left empty
 
-\vspace*{1em}
+\cventry{2005 -- 2009}{Self-education}{}{}{}{%
+    I was taught algorithms and data structures in Pascal, and so I competed in
+    a number of individual and team competitive programming contests. Later, I
+    learned about desktop development and network design, which allowed me to
+    implement a Direct Connect (DC) server from scratch and host a DC hub on a
+    local city network. \\ \vspace{-0.6em}\\
+    \textsc{\color{darkgray} -- Algorithms \& Data Structures, Pascal, Delphi, C++, Qt, Linux}
+}
+
 \section{\textsc{Experience}}
 
 %\subsection{Company}
 %\cventry{year--year}{Job title}{Employer}{City}{}{Description line 1\newline{}Description line 2}
 
-\vspace{0.15em}
+\subsection{NEAR inc. (near.org)}
+\cventry{2019 -- today}{Software Engineer Independent Contractor}{Startup company}{remote}{}{%
+    Develop a sharded, developer-friendly, proof-of-stake public blockchain (in Rust) and developer
+    tools (in TypeScript). Given the startup nature, I am involved in all kinds of work on the way
+    to the product delivery, though, mostly stick to technical problems.
+}
+
+\subsection{Mirabit}
+\cventry{2017 -- 2018}{Independent Consultant}{Software Engineering company}{Kharkiv, Ukraine}{}{%
+    Consulted on the BigData in Machine Learning projects.
+}
+
+\vspace{-0em}
 \subsection{Salford Systems}
-\cventry{June\,2012 -- March\,2018}{Software Engineer}{Data Mining and Predictive Analytics Software company}{}{}{%
+\cventry{2012 -- 2017}{Software Engineer Independent Contractor}{Data Mining and Predictive Analytics Software company}{remote}{}{%
     Designed, led, and developed distributed data mining projects which handle big data loads.
-    The team I led was in charge of solving all the technical problems (development and operations). \vspace{0.4em}
+    The team I led was in charge of solving all the technical problems (development and operations). \\ \vspace{-1em}
     \begin{itemize}
         \item Backend: \textsc{\color{darkgray}
                 \mbox{Python}, \mbox{Cython}, \mbox{Python C-extensions}, \mbox{C},
                 \mbox{Flask}, \mbox{Django},
                 \mbox{Dask}, \mbox{PySpark}, \mbox{Celery},
                 \mbox{Hadoop HDFS},
-                \mbox{PostgreSQL}, \mbox{RabbitMQ}, \mbox{Redis}, \mbox{SeaweedFS}
-            } \\ \vspace{-0.6em}
+                \mbox{PostgreSQL}, \mbox{RabbitMQ}, \mbox{Redis}
+            } \\ \vspace{-0.9em}
         \item Frontend: \textsc{\color{darkgray}
                 \mbox{JavaScript (ES6)}, \mbox{ReactJS}, \mbox{Redux}
-            } \\ \vspace{-0.6em}
+            } \\ \vspace{-0.9em}
         \item Operations: \textsc{\color{darkgray}
-                \mbox{AWS}, \mbox{Linux}, \mbox{Docker}, \mbox{Hadoop}, \mbox{FreeIPA},
-                \mbox{Rancher}, \mbox{GitLab}, \mbox{GitLab CI},
-                \mbox{NGINX}, \mbox{Jenkins}, \mbox{PyInvoke},
-                \mbox{Anaconda}
+                \mbox{AWS}, \mbox{Docker}, \mbox{Hadoop},
+                \mbox{NGINX} \ldots
             }
     \end{itemize}
 }
 
-\vspace{0.35em}
+\vspace{0.15em}
 \subsection{Open-source (github.com/frol)}
-\cventry{September\,2009 -- today}{Contributor}{open-source software}{}{}{%
+\cventry{2009 -- today}{Contributor}{open-source software}{remote}{}{%
     I became a fan of open-source software the moment I consciously used it for the first time back in 2009, developing a small project in Qt.
-    At that time, I had already been using Linux for over two years, but most of my projects were written from scratch, meaning that I didn't use any thirdparty libraries. \\ \vspace{-0.6em}\\
+    At that time, I had already been using Linux for over two years, but most of my projects were written from scratch, meaning that I didn't use any thirdparty libraries. \\ \vspace{-0.7em}\\
     It was September 29, 2009, when the first project I published to the open-source was born.
-    Since then I have open-sourced over 30 projects and contributed to over 100, including Linux kernel, Android for x86, Docker, and Django. \\ \vspace{-0.6em}\\
+    Since then I have open-sourced over 30 projects and contributed to over 100, including Linux kernel, Docker, and Django. \\ \vspace{-0.7em}\\
     I am an active maintainer of some packages on \href{https://hub.docker.com/u/frolvlad}{\underline{Docker Hub}}
-    and \href{https://github.com/frol?tab=repositories&q=feedstock}{\underline{conda-forge} (Anaconda Python)}. \\ \vspace{-0.6em}\\
-    My recent contributions are around Rust packages (cgroups integration, flatbuffers helpers, API ergonomics). \\ \vspace{-0.6em}\\
-    \textsc{\color{darkgray} -- Git, Linux, Docker, Heroku, Rust, Python, JS, Travis CI, CircleCI}
-}
-
-\vspace{0.35em}
-\subsection{Q-BIT (qbit.org.ua)}
-\cventry{March\,2015 -- today}{Education Evangelist}{local science community}{}{}{%
-    I used to be a student at Q-BIT, and now I am helping new students (giving
-    lectures and guiding). Q-BIT has its own online-platform that we use to
-    teach programming and to conduct programming contests. I have
-    designed, developed, and deployed
-    \href{https://gitlab.com/dots.org.ua/ddots}{\underline{the backend}} in
-    Rust and Python that does automatic compilation and execution of student
-    solutions in over 15 different programming languages. \\ \vspace{-0.6em}\\
-    \textsc{\color{darkgray} -- Linux, Docker, NGINX, Rust, Python, C, Bash, JS, PHP, C++, Pascal}
+    and \href{https://github.com/frol?tab=repositories&q=feedstock}{\underline{conda-forge} (Anaconda Python)}. \\ \vspace{-0.7em}\\
+    My recent contributions are around Rust packages (cgroups integration, flatbuffers helpers, API ergonomics). \\ \vspace{-0.7em}\\
+    \textsc{\color{darkgray} -- Git, Rust, Python, JS, Linux, Docker, Heroku, Travis CI, CircleCI}
 }
 
 \vspace{0.35em}
 \subsection{Escalibro (escalibro.com)}
-\cventry{October\,2010 -- today}{Co-creator}{pet project}{}{}{%
-    This is a Web-service for writers and readers, that provides simple and convinient book writing and reading.
+\cventry{2010 -- today}{Co-creator}{pet project}{}{}{%
+    This is a Web-platform for writers and readers, that provides simple and convinient book writing and reading.
     I was involved in the every bit of the project: servers tuning, UI design, frontend and backend development. \\ \vspace{-0.6em}\\
-    \textsc{\color{darkgray} -- Linux, Python, Django, Celery, NGINX, MySQL, RabbitMQ, HTML/CSS/JS}
+    \textsc{\color{darkgray} -- Python, Django, Celery, NGINX, MySQL, RabbitMQ, HTML/CSS/JS, Linux}
 }
 
 \vspace{0.35em}
-\subsection{Fahrenheit 451}
-\cventry{April\,2011 -- May\,2012}{Software Engineer}{Website building company}{}{}{%
-    Developed a food delivery web-service for restaurant chains ``Mafia''
-    (\url{mafia.ua}) and ``Yakitoria'' (\url{yaki.kh.ua}) \\ \vspace{-0.6em}\\
+\subsection{Other Software Engineering Companies}
+\cventry{2009 -- 2012}{Software Engineer Independent Contractor}{}{Kharkiv, Ukraine}{}{%
+    Developed a variety of websites and web-services \\ \vspace{-0.6em}\\
     \textsc{\color{darkgray} -- Python, Django, MySQL, HTML/CSS/JS}
 }
 
-\vspace{0.35em}
-\subsection{EwaDev}
-\cventry{October\,2009 -- December\,2011}{Software Engineer}{Website building company}{}{}{%
-    Developed a variety of websites and web-services \\ \vspace{-0.6em}\\
-    \textsc{\color{darkgray} -- Linux, Python, Django, MySQL, HTML/CSS/JS}
-}
+\section{\textsc{Other Activities}}
 
-\vspace{0.35em}
-\subsection{Classes}
-\cventry{2005 -- 2009}{Student}{}{}{}{%
-    I was taught algorithms and data structures in Pascal, and so I competed in
-    a number of individual (IOI and alike) and team competitions. Later, I
-    learned about desktop development and network design, which allowed me to
-    implement a Direct Connect (DC) server from scratch and host a DC hub on a
-    local city network. \\ \vspace{-0.6em}\\
-    \textsc{\color{darkgray} -- Pascal, Delphi, C++, Qt, Linux}
-}
+\vspace{0.1em}
+\subsection{PeerLab Rust}
+\cventry{2018 -- 2019 (biweekly)}{Co-organizer \& Speaker}{}{Kyiv \& Kharkiv, Ukraine}{}{%
+    Meet-ups and Tech-Talks for Rust/C/C++ developers in Ukraine.}
 
-\section{\textsc{Professional Skills} \small{\textit{(my preferences are marked in bold)}}}
-\cvitem{Programming Languages}{\small\textsc{%
-    \textscbf{Rust} $\circ$ \textscbf{Python} $\circ$ \textscbf{Cython} $\circ$
-    \textscbf{JavaScript (ES6+)} $\circ$ Bash $\circ$ C++ $\circ$ C $\circ$
-    HTML $\circ$ SQL $\circ$ {\LaTeX} $\circ$ PHP $\circ$ Delphi/Pascal
-}}
-\cvitem{Frameworks and Tools}{\small\textsc{%
-    \textscbf{Flask} $\circ$ \textscbf{ReactJS} $\circ$ \textscbf{VIM} $\circ$
-    \textscbf{Dask} $\circ$ Django $\circ$ Celery $\circ$ PySpark $\circ$
-    Apache Spark $\circ$ Hadoop YARN $\circ$ jQuery $\circ$
-    \textscbf{NGINX} $\circ$ Apache $\circ$ Anaconda $\circ$ Qt $\circ$
-    \textscbf{Docker} $\circ$ \textscbf{Git} $\circ$ Jenkins $\circ$
-    \textscbf{OpenVPN} $\circ$ StrongSWAN $\circ$ \ldots
-}}
-\cvitem{Databases}{\small\textsc{%
-    \textscbf{PostgreSQL} $\circ$ MySQL $\circ$ \textscbf{SQLite} $\circ$
-    \textscbf{RabbitMQ} $\circ$ \textscbf{Redis} $\circ$ MongoDB $\circ$ Memcache
-}}
-\cvitem{OS}{\small\textsc{%
-    \textscbf{GNU/Linux} (Debian, Ubuntu, CentOS, \textscbf{ArchLinux}) $\circ$ MS Windows $\circ$ macOS}
-}
+\vspace{0.1em}
+\subsection{Q-BIT}
+\cventry{2015 -- today}{Speaker \& Mentor}{}{Kharkiv, Ukraine}{}{%
+    Q-BIT is a local non-profit youth science community, where I give lectures and mentor school
+    students learning software engineering, including algorithms and data structures.}
+
+\vspace{0.1em}
+\subsection{Seventh All-Ukrainian Blockchain Hackathon}
+\cventry{September\,2019}{Mentor}{}{Kyiv, Ukraine}{}{}
+
 
 \section{\textsc{Languages}}
-\cvitem{Russian, Ukrainian}{Native}
-\cvitem{English}{Fluent}
+\cvitem{Native}{Russian, Ukrainian}
+\cvitem{Fluent}{English}
+\cvitem{Bootstrapping}{Spanish}
 
 %\section{Interests}
 %\cvitem{hobby 1}{Description}
